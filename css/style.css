@@ -18,6 +18,7 @@ h2 {
 h3,
 p {
   font-size: 19px;
+  line-height: 32px;
 }
 
 img {
@@ -27,10 +28,22 @@ img {
 figure {
   margin: 0;
 }
+
 /* Section Styles */
 
 main > article > section {
   padding: 65px 20px;
+}
+
+@media (min-width: 768px) {
+  main > article > section > header > p {
+    max-width: 50%;
+  }
+  main > article > section {
+    padding: 65px 40px;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
 }
 
 /* Grid Styles */
@@ -45,6 +58,7 @@ main > article > section {
   .grid-1-4 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 40px;
   }
 }
 
@@ -71,6 +85,9 @@ main > article > section {
     object-fit: cover;
     height: 100%;
   }
+  .card.grid-1-2 section {
+    padding: 40px;
+  }
 }
 /* Header Styles */
 
@@ -79,6 +96,9 @@ main > article > header {
   color: white;
   padding: 0 20px;
   height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
 }
 
 main > article > header h1 {
@@ -92,6 +112,23 @@ main > article > header a {
   border-radius: 5px;
   padding: 20px;
   display: inline-block;
+}
+
+main > article > header img {
+  opacity: 0.5;
+}
+
+@media (min-width: 768px) {
+  main > article > header {
+    height: unset;
+    padding: 100px 20px;
+  }
+
+  /*the main header should have a grid gap of 40px
+  */
+  main > article > header.grid-1-2 {
+    grid-gap: 100px;
+  }
 }
 
 /* Button Styles */
