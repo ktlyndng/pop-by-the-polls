@@ -7,7 +7,7 @@ var hamburger = document.getElementById("hamburger");
 var menu = document.getElementById("menu");
 
 // get the overlay element
-var menu = document.getElementById("overlay");
+var overlay = document.getElementById("overlay");
 // define toggle function
 function toggleMenu() {
   // either adds or removes active class from element
