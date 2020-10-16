@@ -186,7 +186,9 @@ nav ul li a {
     background: white;
     position: fixed;
     top: 0;
+    left: 0;
     bottom: 0;
+    right: 0;
     padding: 20px;
     box-sizing: border-box;
     z-index: 2;
