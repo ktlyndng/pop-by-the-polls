@@ -248,6 +248,10 @@ footer {
   text-align: center;
 }
 
+footer a:visited {
+    color: white;
+}
+
 footer a {
   color: white;
 }
