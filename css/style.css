@@ -244,7 +244,8 @@ nav ul li a {
 footer {
   background: black;
   color: white;
-  padding: 20px 20px;
+  padding: 60px 40px;
+  text-align: center;
 }
 
 footer a {
